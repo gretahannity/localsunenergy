@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | LocalSunEnergy - Twoja Energia ze Słońca</title>
+    <meta name="description" content="Skontaktuj się z LocalSunEnergy. Oferujemy darmową wycenę instalacji fotowoltaicznych. Napisz do nas lub zadzwoń!">
+    
+    <style>
+        :root { --sun-yellow: #fbc02d; --eco-green: #2e7d32; --dark-blue: #102a43; --light: #f0f4f8; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: var(--light); color: var(--dark-blue); line-height: 1.6; }
+        
+        header { background: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 3px solid var(--sun-yellow); }
+        .logo { font-weight: bold; font-size: 1.5rem; color: var(--eco-green); text-decoration: none; }
+        
+        .contact-hero { background: var(--dark-blue); color: white; padding: 4rem 1rem; text-align: center; }
+        .container { max-width: 1000px; margin: -3rem auto 3rem; padding: 0 1rem; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+        
+        .contact-info, .contact-form { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+        h2 { color: var(--eco-green); margin-top: 0; }
+        
+        .info-item { margin-bottom: 1.5rem; }
+        .info-item strong { display: block; color: var(--dark-blue); text-transform: uppercase; font-size: 0.85rem; }
+        
+        form input, form textarea { width: 100%; padding: 0.8rem; margin: 0.5rem 0 1.2rem; border: 1px solid #d1d9e0; border-radius: 6px; box-sizing: border-box; font-family: inherit; }
+        form button { background: var(--sun-yellow); color: var(--dark-blue); border: none; padding: 1rem 2rem; border-radius: 6px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.3s; }
+        form button:hover { background: #f9a825; transform: translateY(-2px); }
+
+        footer { text-align: center; padding: 3rem; color: #627d98; font-size: 0.9rem; }
+
+        @media (max-width: 768px) { .container { grid-template-columns: 1fr; margin-top: 1rem; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">LocalSunEnergy</a>
+    <nav><a href="index.html" style="text-decoration:none; color:var(--dark-blue); font-weight:600;">Powrót</a></nav>
+</header>
+
+<section class="contact-hero">
+    <h1>Skontaktuj się z nami</h1>
+    <p>Masz pytania o fotowoltaikę? Chcesz darmową wycenę? Jesteśmy do Twojej dyspozycji.</p>
+</section>
+
+<div class="container">
+    <div class="contact-info">
+        <h2>Dane kontaktowe</h2>
+        <div class="info-item">
+            <strong>Adres</strong>
+            <p>ul. Słoneczna 42<br>00-001 Warszawa, Polska</p>
+        </div>
+        <div class="info-item">
+            <strong>Telefon</strong>
+            <p>+48 123 456 789</p>
+        </div>
+        <div class="info-item">
+            <strong>E-mail</strong>
+            <p>biuro@localsunenergy.com</p>
+        </div>
+        <div class="info-item">
+            <strong>Godziny otwarcia</strong>
+            <p>Poniedziałek - Piątek: 08:00 - 18:00</p>
+        </div>
+    </div>
+
+    <div class="contact-form">
+        <h2>Napisz do nas</h2>
+        <form action="#">
+            <label>Imię i Nazwisko</label>
+            <input type="text" placeholder="Twoje imię..." required>
+            
+            <label>Adres E-mail</label>
+            <input type="email" placeholder="Twój e-mail..." required>
+            
+            <label>Wiadomość</label>
+            <textarea rows="5" placeholder="W czym możemy pomóc?"></textarea>
+            
+            <button type="submit">Wyślij zapytanie</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 LocalSunEnergy - Systemy Fotowoltaiczne. Wszystkie prawa zastrzeżone.</p>
+</footer>
+
+</body>
+</html>
