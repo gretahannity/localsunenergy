@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Sun Energy | Sustainable Power Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <style>
+        :root {
+            --sun-glow: #fbbf24;
+        }
+        body {
+            background: radial-gradient(circle at top right, #fffbeb 0%, #fef3c7 40%, #ffffff 100%);
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            border-radius: 24px;
+        }
+        .sun-blob {
+            position: fixed;
+            top: -100px;
+            right: -100px;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(251, 191, 36, 0.3) 0%, rgba(251, 191, 36, 0) 70%);
+            z-index: -1;
+            filter: blur(40px);
+        }
+    </style>
+</head>
+<body class="text-gray-900 font-sans">
+
+    <div class="sun-blob" id="sun"></div>
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-black tracking-tighter text-amber-600 animate__animated animate__fadeIn">
+            LOCAL SUN<span class="text-gray-400">ENERGY</span>
+        </div>
+        <div class="hidden md:flex space-x-6 text-sm font-bold uppercase tracking-widest text-gray-500">
+            <a href="#" class="hover:text-amber-500 transition">Solutions</a>
+            <a href="#" class="hover:text-amber-500 transition">Impact</a>
+            <a href="#" class="bg-amber-500 text-white px-5 py-2 rounded-full hover:bg-amber-600">Get Quote</a>
+        </div>
+    </nav>
+
+    <main class="max-w-7xl mx-auto px-6 pt-20 pb-32">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="animate__animated animate__fadeInLeft">
+                <span class="bg-amber-100 text-amber-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Efficiency Redefined</span>
+                <h1 class="text-6xl md:text-7xl font-extrabold leading-none mt-4 mb-6 text-slate-900">
+                    Your Roof. <br><span class="text-amber-500 underline decoration-amber-200">Our Sun.</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-md">
+                    Harness the power of local solar networks to cut your bills and save the planet—one panel at a time.
+                </p>
+                <div class="flex space-x-4">
+                    <button class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold hover:shadow-2xl transition-all hover:-translate-y-1">
+                        Explore Systems
+                    </button>
+                </div>
+            </div>
+
+            <div class="relative animate__animated animate__fadeInRight">
+                <div class="glass-card p-4 shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&w=800&q=80" 
+                         alt="Solar Panels" class="rounded-2xl w-full h-[400px] object-cover">
+                    <div class="absolute -bottom-6 -left-6 glass-card p-6 shadow-xl animate__animated animate__pulse animate__infinite animate__slow">
+                        <p class="text-3xl font-bold text-amber-600">85%</p>
+                        <p class="text-xs uppercase font-bold text-gray-400">Energy Savings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="bg-slate-900 py-24 text-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center text-2xl">☀️</div>
+                <h3 class="text-xl font-bold">Local Sourced</h3>
+                <p class="text-gray-400">Engineered specifically for the local climate and sunlight patterns of your region.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center text-2xl">🔋</div>
+                <h3 class="text-xl font-bold">Smart Storage</h3>
+                <p class="text-gray-400">Keep the lights on even when the sun goes down with our advanced battery tech.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="w-12 h-12 bg-amber-500 rounded-lg flex items-center justify-center text-2xl">📱</div>
+                <h3 class="text-xl font-bold">Mobile Sync</h3>
+                <p class="text-gray-400">Monitor your energy production and usage in real-time from any device.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-12 text-center text-gray-400 text-sm">
+        © 2026 Local Sun Energy. Powering a brighter future.
+    </footer>
+
+    <script>
+        // Subtle Sun Parallax Effect
+        window.addEventListener('scroll', () => {
+            const sun = document.getElementById('sun');
+            const scroll = window.scrollY;
+            sun.style.transform = `translate(${scroll * 0.1}px, ${scroll * 0.2}px)`;
+        });
+    </script>
+</body>
+</html>
